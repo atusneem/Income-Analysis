@@ -1,10 +1,9 @@
 # Final Project Script
-# Jonathan Bigi, Ayra Tusneem, Louis Jameson
+# Ayra Tusneem
 # April 5th, 2019
 
 # Working Directories for all group members
-setwd("C:/Users/Louis/OneDrive/MGSC 310 final project") # Louis
-setwd("/Users/Johnny/Documents/Spring 2019 - Chapman/MGSC 310 - Statistical Models in Bus/Final Project") # Jonathan
+#Change directory for DataSet
 setwd("/Users/ayratusneem/Downloads") # Ayra
 
 # Installing Packages
@@ -185,7 +184,6 @@ summary(logisticFit4)
 plot(logisticFit4, which = c(1,3))
 exp(logisticFit4$coefficients)
 
-# Louis Plots
 ggplot(Data,aes(x=lnAge,y=Education))+geom_point(aes(color=Income1))+facet_wrap(~Race)
 ggplot(Data,aes(x=lnAge,y =`Work Class`)) + geom_point(aes(color=Income1)) + facet_wrap(~Education)
 ggplot(Data,aes(x=lnAge,y=`Marital Status`)) + geom_point(aes(color=Income1))
