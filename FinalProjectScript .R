@@ -184,16 +184,6 @@ summary(logisticFit4)
 plot(logisticFit4, which = c(1,3))
 exp(logisticFit4$coefficients)
 
-ggplot(Data,aes(x=lnAge,y=Education))+geom_point(aes(color=Income1))+facet_wrap(~Race)
-ggplot(Data,aes(x=lnAge,y =`Work Class`)) + geom_point(aes(color=Income1)) + facet_wrap(~Education)
-ggplot(Data,aes(x=lnAge,y=`Marital Status`)) + geom_point(aes(color=Income1))
-ggplot(Data,aes(x= lnHoursPerWeek,y=`Work Class`))+geom_point(aes(color=Income1))+facet_wrap(~Education)
-ggplot(Data,aes(x=lnHoursPerWeek,y=Occupation))+geom_point(aes(color=Income1))
-
-require("useful")
-require("glmnet")
-require('coefplot')
-require('plotmo')
 
 
 # IncomeVar, formula for predicting income over 50K
